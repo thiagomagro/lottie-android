@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "zulu"
-          java-version: 17
+          java-version: 21
       - uses: gradle/gradle-build-action@v2
       - name: Run Lint
         run: ./gradlew lintDebug --no-daemon
@@ -43,7 +43,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "zulu"
-          java-version: 17
+          java-version: 21
       - uses: gradle/gradle-build-action@v2
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest --no-daemon
@@ -65,7 +65,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "zulu"
-          java-version: 17
+          java-version: 21
       - uses: gradle/gradle-build-action@v2
       - name: Run API compatibility check
         run: ./gradlew apiCheck --no-daemon
@@ -86,7 +86,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "zulu"
-          java-version: 17
+          java-version: 21
       - uses: gradle/gradle-build-action@v2
       - name: Build app
         run: ./gradlew snapshot-tests:assembleDebug snapshot-tests:assembleDebugAndroidTest --no-daemon
@@ -124,7 +124,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: "zulu"
-          java-version: 17
+          java-version: 21
       - uses: gradle/gradle-build-action@v2
       - name: "Deploy Snapshot"
         env:
