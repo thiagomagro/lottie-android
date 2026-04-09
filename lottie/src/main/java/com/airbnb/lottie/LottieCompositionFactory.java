@@ -165,7 +165,7 @@ public class LottieCompositionFactory {
    */
   @WorkerThread
   public static LottieResult<LottieComposition> fromUrlSync(Context context, String url) {
-    return fromUrlSync(context, url, url);
+    return fromUrlSync(context, url, "url_" + url);
   }
 
 
