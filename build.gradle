@@ -14,8 +14,8 @@ plugins {
 }
 
 allprojects {
-  def compileJavaVersion = JavaVersion.VERSION_17
-  def targetJavaVersion = JavaVersion.VERSION_17
+  def compileJavaVersion = JavaVersion.VERSION_21
+  def targetJavaVersion = JavaVersion.VERSION_21
   pluginManager.withPlugin("java") {
     java {
       toolchain {
